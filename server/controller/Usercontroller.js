@@ -11,6 +11,7 @@ const signup= async(req,res,next)=>{
             err.status=403;
             throw err
         }
+        
         else{
             const data= createuser(userData);
             if(data.insertedCount){
@@ -23,7 +24,8 @@ const signup= async(req,res,next)=>{
 }
 
 const login= async(req,res,next)=>{
-    //signup logic
+    
+
 }
 
 module.exports = {signup, login};
